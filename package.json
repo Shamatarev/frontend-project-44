@@ -1,0 +1,25 @@
+{
+  "name": "@hexlet/code",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "[![Actions Status](https://github.com/Shamatarev/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Shamatarev/frontend-project-44/actions)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shamatarev/frontend-project-44.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/Shamatarev/frontend-project-44/issues"
+  },
+  "homepage": "https://github.com/Shamatarev/frontend-project-44#readme",
+  "dependencies": {
+    "ci": "^2.2.0"
+  },
+  "bin": {
+  "brain-games": "bin/brain-games.js"
+  }  
+}
