@@ -3,7 +3,8 @@
 import { foo } from '../csr/cli.js';
 //import { game } from './brain-even.js'
 //import { game2 } from './brain-calc.js'
-import { game3 } from './brain-gcd.js'
+//import { game3 } from './brain-gcd.js'
+import { game4 } from './brain-progression.js'
 import readlineSync from 'readline-sync';
 
 foo();
@@ -11,4 +12,6 @@ foo();
   console.log(`Hello, ${name}!`);
 //game();
 //game2();
-game3();
+//game3();
+game4();
+
