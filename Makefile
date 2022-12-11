@@ -8,7 +8,9 @@ brain-games:	 # запустить приложение
 
 brain-even:	 # запустить приложение
 	node bin/brain-even.js
-
+	
+brain-calc:	 # запустить приложение
+	node bin/brain-calc.js
 lint:
 	npx eslint .
 	
