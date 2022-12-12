@@ -8,18 +8,15 @@ function num() {
   return number;
 }
 
-function test_prime(n) {
-  if (n === 1) {
+function testPrime(n) {
+  if (n < 2) {
     return 'no';
-  } if (n === 2) {
-    return 'yes';
   }
-  for (let x = 2; x < n; x += 1) {
-    if (n % x === 0) {
+  for (let i = 2; i <= n / 2; i += 1) {
+    if (n % i === 0) {
       return 'no';
     }
   }
-
   return 'yes';
 }
 
@@ -29,7 +26,7 @@ function game5() {
   for (let i = 0; i < 3; i += 1) {
     const randomNum = num();
     const quest = readlineSync.question(`Question: ${randomNum}\nYour answer: `);
-    if ((test_prime(randomNum) === 'yes' && quest === 'yes') || (test_prime(randomNum) === 'no' && quest === 'no')) {
+    if ((testPrime(randomNum) === 'yes' && quest === 'yes') || (testPrime(randomNum) === 'no' && quest === 'no')) {
       console.log('Correct');
     } else {
       console.log(`${quest} is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${name}!`);
