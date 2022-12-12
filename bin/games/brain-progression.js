@@ -28,8 +28,9 @@ export function game4() {
     const randomArroX = randomArrow.slice();
     randomArroX[randomArrowNomber] = '..';
     const res = randomArrow[randomArrowNomber];
-
-    const quest = readlineSync.question('Question: ' + `${randomArroX}` + '\nYour answer: ');
+    var myVar = randomArroX.join(' ')
+    
+    const quest = readlineSync.question('Question: ' + `${myVar}` + '\nYour answer: ');
     if (res === Number(quest)) {
       console.log('Correct');
     } else {
