@@ -1,22 +1,22 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
-import name from '../brain-games.js';
+import { name } from '../brain-games.js';
 
 function num() {
   const number = (Math.round(Math.random() * 100));
   return number;
 }
+
 function test_prime(n) {
   if (n === 1) {
     return 'no';
-  }
-  if (n === 2) {
+  }else if (n === 2) {
     return 'yes';
-  }
-  for (let x = 2; x < n; x += 1) {
+  }else{  for (let x = 2; x < n; x += 1) {
     if (n % x === 0) {
       return 'no';
+      }
     }
   }
   return 'yes';
