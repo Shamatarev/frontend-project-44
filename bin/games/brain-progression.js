@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
-import { name } from '../brain-games.js';
+import name from '../brain-games.js';
 
 function num() {
   const number = (Math.round((Math.random()) * 10));
@@ -24,7 +24,7 @@ function game4() {
 
   for (let i = 0; i < 3; i += 1) {
     const randomArrow = progression();
-    const randomArrowNomber = Math.floor(Math.random() * (((randomArrow.length - 2) - 1)));   
+    const randomArrowNomber = Math.floor(Math.random() * (((randomArrow.length - 2) - 1)));
     const randomArroX = randomArrow.slice();
     randomArroX[randomArrowNomber] = '..';
     const res = randomArrow[randomArrowNomber];

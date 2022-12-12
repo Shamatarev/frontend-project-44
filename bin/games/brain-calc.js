@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
-import { name } from '../brain-games.js';
+import name from '../brain-games.js';
 
 function num() {
   const number = (Math.round(Math.random() * 10));
