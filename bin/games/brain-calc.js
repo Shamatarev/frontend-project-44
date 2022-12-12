@@ -13,6 +13,19 @@ function sing() {
   return startSing[Math.round(Math.random() * (0 - 2) + 2)];
 }
 
+const getCalculate = (num1, num2, character) => {
+  switch (character) {
+    case '+':
+      return String(num1 + num2);
+    case '-':
+      return String(num1 - num2);
+    case '*':
+      return String(num1 * num2);
+    default:
+      return null;
+    }
+  };
+
 function game2() {
   console.log('What is the result of the expression?');
 
@@ -20,11 +33,13 @@ function game2() {
     const randomNum = num();
     const randomNum2 = num();
     const randomSing = sing();
+    const result = getCalculate(randomNum, randomNum2, randomSing);
+    
     const quest = readlineSync.question(`Question: ${randomNum} ${randomSing} ${randomNum2}\nYour answer: `);
-    if ((eval(randomNum + randomSing + randomNum2)) === Number(quest)) {
+    if (result === quest) {
       console.log('Correct');
     } else {
-      console.log(`${quest} is wrong answer ;(. Correct answer was ${eval(randomNum + randomSing + randomNum2)}.\nLet's try again, ${name}!`);
+      console.log(`${quest} is wrong answer ;(. Correct answer was ${result}.\nLet's try again, ${name}!`);
       return;
     }
   }
