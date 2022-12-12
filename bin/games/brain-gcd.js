@@ -25,7 +25,7 @@ export function game3() {
     if (nod === Number(quest)) {
       console.log('Correct');
     } else {
-      console.log(`${quest} is wrong answer ;(. Correct answer was ${nod}.\nLet's try again, ${name}`);
+      console.log(`${quest} is wrong answer ;(. Correct answer was ${nod}.\nLet's try again, ${name}!`);
       return;
     }
   }

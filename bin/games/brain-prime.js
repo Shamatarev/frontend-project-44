@@ -31,7 +31,7 @@ export function game5() {
     if ((test_prime(randomNum) === 'yes' && quest === 'yes') || (test_prime(randomNum) === 'no' && quest === 'no')) {
       console.log('Correct');
     } else {
-      console.log(`${quest} is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${name}`);
+      console.log(`${quest} is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${name}!`);
       return;
     }
   }

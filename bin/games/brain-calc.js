@@ -24,7 +24,7 @@ export function game2() {
     if ((eval(randomNum + randomSing + randomNum2)) === Number(quest)) {
       console.log('Correct');
     } else {
-      console.log(`${quest} is wrong answer ;(. Correct answer was ${eval(randomNum + randomSing + randomNum2)}.\nLet's try again, ${name}`);
+      console.log(`${quest} is wrong answer ;(. Correct answer was ${eval(randomNum + randomSing + randomNum2)}.\nLet's try again, ${name}!`);
       return;
     }
   }

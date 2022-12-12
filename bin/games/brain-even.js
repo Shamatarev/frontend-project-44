@@ -17,7 +17,7 @@ export function game() {
     if ((randomNum % 2 === 0 && quest === 'yes') || (randomNum % 2 !== 0 && quest === 'no')) {
       console.log('Correct');
     } else {
-      console.log(`${quest} is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${name}`);
+      console.log(`${quest} is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${name}!`);
       return;
     }
   }

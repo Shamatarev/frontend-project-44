@@ -33,7 +33,7 @@ export function game4() {
     if (res === Number(quest)) {
       console.log('Correct');
     } else {
-      console.log(`${quest} is wrong answer ;(. Correct answer was ${res}.\nLet's try again, ${name}`);
+      console.log(`${quest} is wrong answer ;(. Correct answer was ${res}.\nLet's try again, ${name}!`);
       return;
     }
   }
