@@ -4,7 +4,7 @@ import readlineSync from 'readline-sync';
 import { name } from '../brain-games.js';
 
 function num() {
-  const number = (Math.round((Math.random() + 0.1) * 10));
+  const number = (Math.round((Math.random()) * 10));
   return number;
 }
 
