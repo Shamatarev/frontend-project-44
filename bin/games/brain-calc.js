@@ -23,8 +23,8 @@ const getCalculate = (num1, num2, character) => {
       return String(num1 * num2);
     default:
       return null;
-    }
-  };
+  }
+};
 
 function game2() {
   console.log('What is the result of the expression?');
@@ -34,7 +34,7 @@ function game2() {
     const randomNum2 = num();
     const randomSing = sing();
     const result = getCalculate(randomNum, randomNum2, randomSing);
-    
+
     const quest = readlineSync.question(`Question: ${randomNum} ${randomSing} ${randomNum2}\nYour answer: `);
     if (result === quest) {
       console.log('Correct');

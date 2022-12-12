@@ -11,14 +11,15 @@ function num() {
 function test_prime(n) {
   if (n === 1) {
     return 'no';
-  }else if (n === 2) {
+  } if (n === 2) {
     return 'yes';
-  }else{  for (let x = 2; x < n; x += 1) {
+  }
+  for (let x = 2; x < n; x += 1) {
     if (n % x === 0) {
       return 'no';
-      }
     }
   }
+
   return 'yes';
 }
 
