@@ -27,7 +27,7 @@ function game4() {
     const randomArrowNomber = Math.round(Math.random() * (randomArrow.length));
     const randomArroX = randomArrow.slice();
     randomArroX[randomArrowNomber] = '..';
-    const res = randomArrow[randomArrowNomber - 1];
+    const res = randomArrow[randomArrowNomber];
     const myVar = randomArroX.join(' ');
 
     const quest = readlineSync.question(`Question: ${myVar}\nYour answer: `);
