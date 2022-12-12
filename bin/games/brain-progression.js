@@ -24,7 +24,7 @@ function game4() {
 
   for (let i = 0; i < 3; i += 1) {
     const randomArrow = progression();
-    const randomArrowNomber = Math.round(Math.random() * (randomArrow.length)) - 1;
+    const randomArrowNomber = Math.round(Math.random() * (randomArrow.length)- 1);
     const randomArroX = randomArrow.slice();
     randomArroX[randomArrowNomber] = '..';
     const res = randomArrow[randomArrowNomber];
