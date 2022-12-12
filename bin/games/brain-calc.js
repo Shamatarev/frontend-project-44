@@ -20,7 +20,7 @@ function game2() {
     const randomNum = num();
     const randomNum2 = num();
     const randomSing = sing();
-    const quest = readlineSync.question('Question: ' + `${randomNum} ${randomSing} ${randomNum2}` + '\nYour answer: ');
+    const quest = readlineSync.question(`Question: ${randomNum} ${randomSing} ${randomNum2}\nYour answer: `);
     if ((eval(randomNum + randomSing + randomNum2)) === Number(quest)) {
       console.log('Correct');
     } else {

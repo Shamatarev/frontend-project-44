@@ -21,7 +21,7 @@ function game3() {
     const randomNum = num();
     const randomNum2 = num();
     const nod = NOD(randomNum, randomNum2);
-    const quest = readlineSync.question('Question: ' + `${randomNum} ${randomNum2}` + '\nYour answer: ');
+    const quest = readlineSync.question(`Question: ${randomNum} ${randomNum2}\nYour answer: `);
     if (nod === Number(quest)) {
       console.log('Correct');
     } else {

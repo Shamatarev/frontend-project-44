@@ -30,7 +30,7 @@ function game4() {
     const res = randomArrow[randomArrowNomber];
     const myVar = randomArroX.join(' ');
 
-    const quest = readlineSync.question('Question: ' + `${myVar}` + '\nYour answer: ');
+    const quest = readlineSync.question(`Question: ${myVar}\nYour answer: `);
     if (res === Number(quest)) {
       console.log('Correct');
     } else {
