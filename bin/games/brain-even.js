@@ -8,10 +8,10 @@ function num() {
   return number;
 }
 
-export function game() {
+function game() {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 3; i += 1) {
     const randomNum = num();
     const quest = readlineSync.question(`Question: ${randomNum}\nYour answer: `);
     if ((randomNum % 2 === 0 && quest === 'yes') || (randomNum % 2 !== 0 && quest === 'no')) {

@@ -14,7 +14,7 @@ function test_prime(n) {
   if (n === 2) {
     return 'yes';
   }
-  for (let x = 2; x < n; x++) {
+  for (let x = 2; x < n; x += 1) {
     if (n % x === 0) {
       return 'no';
     }
@@ -22,10 +22,10 @@ function test_prime(n) {
   return 'yes';
 }
 
-export function game5() {
+function game5() {
   console.log('Answer "yes" if given number is prime. Otherwise answer "no"');
 
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 3; i += 1) {
     const randomNum = num();
     const quest = readlineSync.question(`Question: ${randomNum}\nYour answer: `);
     if ((test_prime(randomNum) === 'yes' && quest === 'yes') || (test_prime(randomNum) === 'no' && quest === 'no')) {

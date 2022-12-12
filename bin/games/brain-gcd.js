@@ -14,10 +14,10 @@ function NOD(x, y) {
   return NOD(y, x % y);
 }
 
-export function game3() {
+function game3() {
   console.log('Find the greatest common divisor of given numbers.');
 
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 3; i += 1) {
     const randomNum = num();
     const randomNum2 = num();
     const nod = NOD(randomNum, randomNum2);

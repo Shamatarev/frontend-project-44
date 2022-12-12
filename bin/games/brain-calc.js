@@ -13,10 +13,10 @@ function sing() {
   return startSing[Math.round(Math.random() * (0 - 2) + 2)];
 }
 
-export function game2() {
+function game2() {
   console.log('What is the result of the expression?');
 
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 3; i += 1) {
     const randomNum = num();
     const randomNum2 = num();
     const randomSing = sing();
