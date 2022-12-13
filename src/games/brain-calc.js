@@ -11,7 +11,6 @@ const calculate = (num1, num2, character) => {
       return (num1 - num2);
     case '*':
       return (num1 * num2);
-      break;
   }
 };
 
