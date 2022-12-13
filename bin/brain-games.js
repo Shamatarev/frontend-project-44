@@ -1,9 +1,4 @@
 #!/usr/bin/env node
+import welcome from '../src/cli.js';
 
-import readlineSync from 'readline-sync';
-import foo from '../csr/cli.js';
-
-foo();
-const name = readlineSync.question('May I have your name?: ');
-console.log(`Hello, ${name}!`);
-export default name;
+welcome();
