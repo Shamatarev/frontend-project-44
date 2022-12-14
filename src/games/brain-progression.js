@@ -1,4 +1,4 @@
-import random from '../utils.js';
+import getRandomNumber from '../utils.js';
 import game from '../index.js';
 
 const description = 'What number is missing in the progression?';
@@ -12,11 +12,11 @@ const getProgression = (firstNumber, step, lengthOfProgression) => {
 };
 
 const getGameData = () => {
-  const lengthOfProgression = random(10, 20);
-  const firstNumber = random(1, 50);
-  const step = random(1, 10);
+  const lengthOfProgression = getRandomNumber(10, 20);
+  const firstNumber = getRandomNumber(1, 50);
+  const step = getRandomNumber(1, 10);
   const progression = getProgression(firstNumber, step, lengthOfProgression);
-  const hiddenNumber = random(1, 3);
+  const hiddenNumber = getRandomNumber(1, lengthOfProgression - 1);
   const correctAnswer = String(progression[hiddenNumber]);
   progression[hiddenNumber] = '..';
   const question = progression.join(' ');
